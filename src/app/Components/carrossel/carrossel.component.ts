@@ -1,6 +1,6 @@
 
-import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, OnDestroy, OnInit, Inject, PLATFORM_ID, AfterViewInit, ViewChild  } from '@angular/core';
 
 @Component({
   selector: 'app-carrossel',
@@ -9,28 +9,94 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './carrossel.component.html',
   styleUrls: ['./carrossel.component.css']
 })
-export class CarrosselComponent implements OnInit, OnDestroy {
+export class CarrosselComponent implements OnInit {
   slides = [
-    { content: 'Slide 1' },
-    { content: 'Slide 2' },
-    { content: 'Slide 3' }
+    {
+      headline: 'Escape usando Portais',
+      content: 'Desafie a IA manipuladora GLaDOS usando a maquina de abrir portais, explore os enigmas desafiadores, onde a física e a lógica se encontram em um jogo de quebra-cabeças revolucionário. ',
+      logo: '../../../assets/imgs/logo-portal.png',
+      background: '../../../assets/imgs/portal.png'
+    },
+    {
+      headline: 'Descubra o Poder da Magia',
+      content: 'Entre no mundo mágico de Hogwarts e explore seu destino como um bruxo ou bruxa lendário nesta emocionante jornada pelo universo de Harry Potter.',
+      logo: '../../../assets/imgs/logo-hogwarts.png',
+      background: '../../../assets/imgs/hogwarts.png'
+    },
+    {
+      headline: 'Corra pela Liberdade',
+      content: 'Entre no mundo das corridas clandestinas e sinta a adrenalina das ruas enquanto você compete por respeito, poder e velocidade em Need for Speed.',
+      logo: '../../../assets/imgs/logo-needforspeed.png',
+      background: '../../../assets/imgs/needforspeed.png'
+    },
+    {
+      headline: 'Reviva a Aventura Épica dos Dinossauros',
+      content: 'Explore o mundo de Jurassic World reimaginado em forma de LEGO com o humor característico da TT Games, explore a Isla Nublar enquanto revive cenas inesquecíveis do filme.',
+      logo: '../../../assets/imgs/logo-lego.png',
+      background: '../../../assets/imgs/lego.png'
+    },
+    {
+      headline: 'Liberte o Guerreiro Interior',
+      content: 'Prepare-se para desafios épicos e combates intensos. Domine habilidades únicas de cada personagem enquanto enfrenta adversários poderosos neste clássico jogo de luta.',
+      logo: '../../../assets/imgs/logo-streetfight.png',
+      background: '../../../assets/imgs/streetfight.png'
+    },
+    {
+      headline: 'Explore, Construa, Sobreviva',
+      content: 'Entre no mundo do Minecraft onde sua criatividade é o único limite. Explore paisagens infinitas, construa estruturas épicas e sobreviva às criaturas da noite.',
+      logo: '../../../assets/imgs/logo-minecraft.png',
+      background: '../../../assets/imgs/minecraft.png'
+    }
+    
   ];
   currentSlide = 0;
+  previousSlide = 0;
   private timeoutId: any;
 
+  private isBrowser: boolean;
+
+  @ViewChild('contentElement') contentElement: any;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
+
   ngOnInit(): void {
+    if (this.isBrowser) {
+      this.startSlideShow();
+    }
+  }
+  startSlideShow() {
     this.nextSlide();
   }
 
-  ngOnDestroy(): void {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
+  nextSlide() {
+    setTimeout(() => {
+
+        this.previousSlide = this.currentSlide;
+  
+    }, 4700);
+
+    this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+
+    if (this.isBrowser) {
+      this.timeoutId = setTimeout(() => {
+        if (document.readyState === 'complete') {
+          
+          this.nextSlide();
+          
+        }
+      }, 5000);
+       
     }
   }
 
-  nextSlide() {
-    this.timeoutId = setTimeout(() => {
-      this.currentSlide = (this.currentSlide + 1) % this.slides.length;
-    }, 2000);
+  getSlideBackground(): any {
+    return {
+      'background-image': `url(${this.slides[this.currentSlide].background})`
+    };
   }
+
 }
+
+
