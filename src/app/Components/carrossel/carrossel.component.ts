@@ -49,13 +49,19 @@ export class CarrosselComponent implements OnInit {
     }
     
   ];
+
+  buttons = [
+    { class: 'hogwarts', id: 'hogwarts' },
+    { class: 'needforspeed', id: 'needforspeed' },
+    { class: 'lego', id: 'lego' },
+    { class: 'streetfight', id: 'streetfight' },
+    { class: 'minecraft', id: 'minecraft' },
+    { class: 'portal', id: 'portal' }
+  ];
+
   currentSlide = 0;
   previousSlide = 0;
-  private timeoutId: any;
-
   private isBrowser: boolean;
-
-  @ViewChild('contentElement') contentElement: any;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     this.isBrowser = isPlatformBrowser(this.platformId);
@@ -66,13 +72,14 @@ export class CarrosselComponent implements OnInit {
       this.startSlideShow();
     }
   }
+
   startSlideShow() {
     this.nextSlide();
   }
 
   nextSlide() {
-    setTimeout(() => {
 
+    setTimeout(() => {
         this.previousSlide = this.currentSlide;
   
     }, 4700);
@@ -80,14 +87,13 @@ export class CarrosselComponent implements OnInit {
     this.currentSlide = (this.currentSlide + 1) % this.slides.length;
 
     if (this.isBrowser) {
-      this.timeoutId = setTimeout(() => {
+      setTimeout(() => {
         if (document.readyState === 'complete') {
-          
+  
           this.nextSlide();
           
         }
       }, 5000);
-       
     }
   }
 
@@ -95,6 +101,10 @@ export class CarrosselComponent implements OnInit {
     return {
       'background-image': `url(${this.slides[this.currentSlide].background})`
     };
+  }
+
+  changeSlide(index: number) {
+    this.currentSlide = index;
   }
 
 }

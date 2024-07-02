@@ -33,9 +33,11 @@
     padding-left: 4%;
     width: 450px;
   }
+
   img {
     width: 30%;
   }
+
   button {
     border-radius: 20px;
     font-size: 17px;
@@ -44,7 +46,8 @@
     font-weight: bold;
     margin-top: 20px;
   }
-  button:hover{
+
+  button:hover {
     cursor: pointer;
     border: 2px solid #000;
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.822);
@@ -54,6 +57,67 @@
   background-position: top left;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.box-botoes {
+  display: flex;
+  gap: 1%;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 5px 5px 5px;
+
+  button {
+    border-radius: 8px;
+    width: 12.5%;
+    height: 13vh;
+    background-position: top left;
+    background-size: cover;
+    border: 3px solid white;
+    box-sizing: border-box;
+    opacity: 0.85;
+    transition: opacity 0.3s, margin-top 0.3s;
+  }
+
+  button:hover {
+    margin-top: -20px;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .hogwarts {
+    background-image: url(../../../assets/imgs/capa-hogwarts.png);
+  }
+
+  .needforspeed {
+    background-image: url(../../../assets/imgs/capa-needforspeed.png);
+  }
+
+  .lego {
+    background-image: url(../../../assets/imgs/capa-lego.png);
+  }
+
+  .streetfight {
+    background-image: url(../../../assets/imgs/capa-streetfight.png);
+  }
+
+  .minecraft {
+    background-image: url(../../../assets/imgs/capa-minecraft.png);
+  }
+
+  .portal {
+    background-image: url(../../../assets/imgs/capa-portal.png);
+  }
+}
+.box-botoes:hover button {
+  opacity: 0.6;
+}
+.box-botoes button:hover {
+  opacity: 1;
+}
+.box-botoes button.active {
+  border: 3px solid #ffffff;
+  box-shadow: 0px 0px 0px 3px rgba(13, 97, 206, 0.822);
+  opacity: 1;
 }
 
 .carousel-slide.active {
@@ -73,8 +137,13 @@
 }
 
 @keyframes slide-in {
-  from { transform: translatey(15%); }
-  to { transform: translatey(0); }
+  from {
+    transform: translatey(15%);
+  }
+
+  to {
+    transform: translatey(0);
+  }
 }
 
 @media(max-width:1400px) {

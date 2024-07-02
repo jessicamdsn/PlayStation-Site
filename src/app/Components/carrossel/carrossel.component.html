@@ -20,7 +20,49 @@
       <button> Saiba mais</button>
     </div>
   </div>
-
   </div>
 </div>
+
+<!-- <div class="box-botoes">
+  <button class="hogwarts" [ngClass]="{'active': currentSlide}"></button>
+  <button class="needforspeed" [ngClass]="{'active':currentSlide}"></button>
+  <button class="lego" [ngClass]="{'active': currentSlide}"></button>
+  <button class="streetfight" [ngClass]="{'active': currentSlide}"></button>
+  <button class="minecraft" [ngClass]="{'active':currentSlide}"></button>
+  <button class="portal" [ngClass]="{'active':currentSlide}"></button>
+</div> -->
+
+<div class="box-botoes">
+  <button 
+    class="hogwarts" 
+    [ngClass]="{ 'active': currentSlide === 1 }"
+    (click)="changeSlide(1)"
+  ></button>
+  <button 
+    class="needforspeed" 
+    [ngClass]="{ 'active': currentSlide === 2 }"
+    (click)="changeSlide(2)"
+  ></button>
+  <button 
+    class="lego" 
+    [ngClass]="{ 'active': currentSlide === 3 }"
+    (click)="changeSlide(3)"
+  ></button>
+  <button 
+    class="streetfight" 
+    [ngClass]="{ 'active': currentSlide === 4 }"
+    (click)="changeSlide(4)"
+  ></button>
+  <button 
+    class="minecraft" 
+    [ngClass]="{ 'active': currentSlide === 5 }"
+    (click)="changeSlide(5)"
+  ></button>
+  <button 
+    class="portal" 
+    [ngClass]="{ 'active': currentSlide === 0 }"
+    (click)="changeSlide(0)"
+  ></button>
+</div>
+
 
