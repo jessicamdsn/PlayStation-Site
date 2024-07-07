@@ -1,0 +1,124 @@
+.box-all {
+    width: 100%;
+    background-image: url(../../../assets/img/playbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 35px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: rgb(77, 77, 77);
+    }
+}
+
+.box-carrossel {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+swiper-slide div {
+    height: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+swiper-slide div div {
+    width: 400px;
+    padding: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+.slide1 {
+    background-image: url(../../../assets/img/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    button {
+        width: 250px;
+        background-color: rgb(61, 61, 61);
+        color: rgb(233, 193, 18);
+        border: 1px solid white;
+        font-size: 15px;
+        font-weight: 550;
+        padding: 5px 0px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+}
+
+.slide2 {
+    background-image: url(../../../assets/img/slide2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    button {
+        width: 250px;
+        background-color: rgb(248, 194, 17);
+        color: rgb(15, 15, 15);
+        border: 1px solid white;
+        font-size: 15px;
+        font-weight: 550;
+        padding: 5px 0px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+}
+
+.slide3 {
+    background-image: url(../../../assets/img/slide3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    button {
+        width: 250px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(17, 17, 17);
+        border: 1px solid transparent;
+        font-size: 15px;
+        font-weight: 550;
+        padding: 5px 0px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+}
+
+
+.box-botao {
+
+    display: flex;
+    justify-content: center;
+
+    button {
+        padding: 12px 15px;
+        border-radius: 25px;
+        background-color: rgb(17, 115, 226);
+        margin: 60px 0px;
+        border: 2px solid transparent;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 550;
+    }
+    button:hover{
+        cursor: pointer;
+        border: 2px solid rgb(189, 189, 189);
+        box-shadow: 0px 0px 0px 2px rgb(17, 115, 226);
+    }
+
+}
