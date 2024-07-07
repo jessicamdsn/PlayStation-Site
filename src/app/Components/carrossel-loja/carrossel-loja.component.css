@@ -1,0 +1,58 @@
+.slide{
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.box-aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+    margin-bottom: 50px;
+}
+.box-text{
+    width: 35%;
+    h1{
+        font-size:6vh;
+        line-height: 7vh;
+        margin-bottom: 5vh;
+        font-weight: 350;
+    }
+    h2{
+        font-size: 3vh;
+        color: rgb(17, 114, 204);
+        font-weight: 350;
+    }
+    button{
+        padding: 12px 15px;
+        background-color: rgb(29, 107, 224);
+        color: aliceblue;
+        border: none;
+        border-radius: 25px;
+        font-weight: 550;
+        font-size: 14px;
+        margin-top: 10px;
+        border: 2px solid transparent;
+    }
+    button:hover{
+        cursor: pointer;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 0px 2px rgb(29, 107, 224);
+    }
+}
+.box-img{
+    width: 60%;
+}
+
+.swiper{
+    button{
+        border: 2px solid transparent;
+        background-color: #ffffff;
+    }
+    button:hover{
+        cursor: pointer;
+        scale: 110%;
+    }
+}

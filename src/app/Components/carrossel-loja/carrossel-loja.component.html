@@ -1,0 +1,91 @@
+
+<div class="slide">
+    <div class="box-aside">
+      <div class="box-text">
+        <h1>Apresentamos o console PS5 e seus acessórios</h1>
+        <h2>{{ slides[currentSlide].headline }}</h2>
+        <p>{{ slides[currentSlide].content }}</p>
+        <button>Saiba mais</button>
+      </div>
+      <div class="box-img">
+        <img [src]="slides[currentSlide].img" alt="" width="100%">
+      </div>
+    </div>
+  
+
+    <swiper-container class="swiper slide-options" slides-per-view="6" loop="false" navigation="true" pagination="true">
+        <swiper-slide *ngFor="let slide of slides; let i = index" class="slide-button">
+            <button (click)="changeSlide(i)">
+          <img [src]="slide.img" alt="Slide Image" width="200px">
+          <p>{{slide.headline}}</p>
+        </button>
+        
+        </swiper-slide>
+    </swiper-container>
+   
+    
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide">
+
+    <div class="box-aside">
+        <div class="box-text">
+            <h1>Apresentamos o console PS5 e seus acessórios</h1>
+            <h2>{{ slide.headline}}</h2>
+            <p>{{ slide.content}}</p>
+            <button>Saiba mais</button>
+        </div>
+
+        <div class="box-img">
+            <img src="{{ slide.img}}" alt="" width="100%">
+        </div>
+    </div>
+
+    <swiper-container class="swiper" slides-per-view="6" loop="false" navigation="true" pagination="true">
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+        <swiper-slide>
+            <button><img src="{{ slide.img}}" alt="" width="200px"></button>
+        </swiper-slide>
+    </swiper-container>
+</div> -->
