@@ -1,0 +1,22 @@
+<div class="box-all">
+    <div>
+        <h1>Jogos incríveis já disponíveis ou chegando em breve</h1>
+    </div>
+        
+    <div class="botao">
+        <button class="b1" (click)="iniciarAnimacao()" [ngClass]="{'active': selectedButton === 'antigos'}" (click)="selectButton('antigos')">Favoritos antigos</button>
+        <button class="b2" (click)="iniciarAnimacao()" [ngClass]="{'active': selectedButton === 'novos'}" (click)="selectButton('novos')">Novidades</button>
+    </div>
+    <div class="jogos" *ngIf="selectedButton === 'antigos'" [@animacaoPiscar]="estadoAnimacao">
+        <picture *ngFor="let jogo of jogos">
+            <img [src]="jogo.image" alt="" >
+            <p>{{jogo.nome}}</p>
+        </picture>
+    </div>
+    <div class="jogos" *ngIf="selectedButton === 'novos'" [@animacaoPiscar]="estadoAnimacao">
+        <picture *ngFor="let jogo of breve">
+            <img [src]="jogo.image" alt="" >
+            <p>{{jogo.nome}}</p>
+        </picture>
+    </div>
+</div>
