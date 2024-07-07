@@ -1,13 +1,26 @@
 import { CommonModule } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-carrossel-loja',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,],
   templateUrl: './carrossel-loja.component.html',
   styleUrl: './carrossel-loja.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  animations: [
+    trigger('animacaoPiscar', [
+      state('inicio', style({
+        opacity: 1
+      })),
+      state('sumir', style({
+        opacity: 0
+      })),
+      transition('inicio => sumir', animate('0s ease-out')),
+      transition('sumir => inicio', animate('500ms ease-in'))
+    ])
+  ]
 })
 export class CarrosselLojaComponent {
   slides = [
@@ -60,7 +73,18 @@ export class CarrosselLojaComponent {
 
   currentSlide = 0;
 
+
   changeSlide(index: number) {
     this.currentSlide = index;
+    this.iniciarAnimacao()
+  }
+
+  estadoAnimacao = 'inicio';
+
+  iniciarAnimacao() {
+    this.estadoAnimacao = 'sumir';
+    setTimeout(() => {
+      this.estadoAnimacao = 'inicio';
+    }, 100); // Ajuste o tempo para coincidir com a duração da animação
   }
 }
