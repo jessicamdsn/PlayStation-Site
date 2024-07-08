@@ -8,6 +8,7 @@ import { RealidadeComponent } from '../Components/realidade/realidade.component'
 import { LancamentoComponent } from '../Components/lancamento/lancamento.component';
 import { PlaystationStoreComponent } from '../Components/playstation-store/playstation-store.component';
 import { NovidadesComponent } from '../Components/novidades/novidades.component';
+import { RedesSociaisComponent } from '../Components/redes-sociais/redes-sociais.component';
 
 @Component({
   selector: 'app-homepage',
@@ -22,6 +23,7 @@ import { NovidadesComponent } from '../Components/novidades/novidades.component'
     LancamentoComponent,
     PlaystationStoreComponent,
     NovidadesComponent,
+    RedesSociaisComponent,
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
