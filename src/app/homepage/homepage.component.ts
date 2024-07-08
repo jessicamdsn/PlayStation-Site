@@ -9,6 +9,7 @@ import { LancamentoComponent } from '../Components/lancamento/lancamento.compone
 import { PlaystationStoreComponent } from '../Components/playstation-store/playstation-store.component';
 import { NovidadesComponent } from '../Components/novidades/novidades.component';
 import { RedesSociaisComponent } from '../Components/redes-sociais/redes-sociais.component';
+import { FooterComponent } from '../Components/footer/footer.component';
 
 @Component({
   selector: 'app-homepage',
@@ -24,6 +25,7 @@ import { RedesSociaisComponent } from '../Components/redes-sociais/redes-sociais
     PlaystationStoreComponent,
     NovidadesComponent,
     RedesSociaisComponent,
+    FooterComponent,
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'

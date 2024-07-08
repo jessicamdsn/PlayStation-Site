@@ -1,0 +1,36 @@
+.box-all{
+    background-color:#00439c;
+    padding: 20px 50px;
+}
+.content{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    .link{
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(37, 157, 255);
+        margin-bottom: 50px;
+    }
+    .link:hover{
+        scale: 105%;
+        color: aqua;
+    }
+}
+.jessica{
+    text-decoration: none;
+        font-size: 18px;
+        color: rgb(37, 157, 255);
+        margin-bottom: 50px;
+}
+.jessica:hover{
+    color: rgb(13, 87, 129);
+}
+
+hr{
+    margin-top: -20px;
+    border-color: #3c7acc;
+}
