@@ -6,6 +6,7 @@ import { JogosComponent } from '../Components/jogos/jogos.component';
 import { PlayPlusComponent } from '../Components/play-plus/play-plus.component';
 import { RealidadeComponent } from '../Components/realidade/realidade.component';
 import { LancamentoComponent } from '../Components/lancamento/lancamento.component';
+import { PlaystationStoreComponent } from '../Components/playstation-store/playstation-store.component';
 
 @Component({
   selector: 'app-homepage',
@@ -17,7 +18,8 @@ import { LancamentoComponent } from '../Components/lancamento/lancamento.compone
     JogosComponent, 
     PlayPlusComponent, 
     RealidadeComponent,
-    LancamentoComponent
+    LancamentoComponent,
+    PlaystationStoreComponent
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
