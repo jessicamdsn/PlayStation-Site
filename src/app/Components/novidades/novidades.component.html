@@ -1,1 +1,27 @@
-<p>novidades works!</p>
+<div>
+    <h1>As novidades do PlayStation Blog</h1>
+
+    <div class="box-carrossel">
+        <swiper-container class="swiper" [slidesPerView]="3.2" centered-slides="true" [loop]="true" [navigation]="true"  [pagination]="false">
+            <swiper-slide *ngFor="let nov of blog">
+                <div class="content">
+                    <div class="img">
+                        <img [src]="nov.image" alt="" width="100%">
+                        <h2>{{nov.titulo}}</h2>
+                        <p>{{nov.content}}</p>
+                    </div>
+                    <div class="autor">
+                        <div>
+                            <img [src]="nov.autorimage" alt="" width="50px" height="50px">
+                        </div>
+                        <div class="text">
+                            <p>{{nov.nome}}</p>
+                            <p>{{nov.status}}</p>
+                            <span>{{nov.data}}</span>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+</div>

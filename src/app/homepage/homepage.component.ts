@@ -7,6 +7,7 @@ import { PlayPlusComponent } from '../Components/play-plus/play-plus.component';
 import { RealidadeComponent } from '../Components/realidade/realidade.component';
 import { LancamentoComponent } from '../Components/lancamento/lancamento.component';
 import { PlaystationStoreComponent } from '../Components/playstation-store/playstation-store.component';
+import { NovidadesComponent } from '../Components/novidades/novidades.component';
 
 @Component({
   selector: 'app-homepage',
@@ -19,7 +20,8 @@ import { PlaystationStoreComponent } from '../Components/playstation-store/plays
     PlayPlusComponent, 
     RealidadeComponent,
     LancamentoComponent,
-    PlaystationStoreComponent
+    PlaystationStoreComponent,
+    NovidadesComponent,
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
