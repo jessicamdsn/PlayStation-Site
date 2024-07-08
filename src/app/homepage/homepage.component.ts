@@ -5,11 +5,20 @@ import { CarrosselLojaComponent } from '../Components/carrossel-loja/carrossel-l
 import { JogosComponent } from '../Components/jogos/jogos.component';
 import { PlayPlusComponent } from '../Components/play-plus/play-plus.component';
 import { RealidadeComponent } from '../Components/realidade/realidade.component';
+import { LancamentoComponent } from '../Components/lancamento/lancamento.component';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [NavComponent, CarrosselComponent, CarrosselLojaComponent, JogosComponent, PlayPlusComponent,RealidadeComponent ],
+  imports: [
+    NavComponent, 
+    CarrosselComponent, 
+    CarrosselLojaComponent, 
+    JogosComponent, 
+    PlayPlusComponent, 
+    RealidadeComponent,
+    LancamentoComponent
+  ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
 })

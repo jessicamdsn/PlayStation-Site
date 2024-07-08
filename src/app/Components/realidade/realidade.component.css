@@ -2,7 +2,8 @@
     background-image: url(../../../assets/img/virtual.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 580px;
+    background-position: bottom right;
+    height: 70%;
 }
 
 .box-all div {
