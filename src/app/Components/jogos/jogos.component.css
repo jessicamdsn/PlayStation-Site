@@ -12,6 +12,9 @@
 h1 {
     font-size: 35px;
     font-weight: 200;
+    width: 94%;
+    text-align: center;
+    padding: 0px 3%;
 }
 
 .botao {
@@ -49,7 +52,7 @@ h1 {
     flex-wrap: wrap;
     gap: 1%;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .jogos picture {
@@ -80,4 +83,35 @@ button.active {
     padding: 15px 20px;
     font-size: 14px;
     font-weight: 550;
+}
+
+@media (max-width: 710px) {
+    h1 {
+        font-size: 25px;
+
+    }
+    .botao {
+        width: 240px;
+        gap: 15px;
+    }
+    .b1,
+    .b2 {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .jogos {
+        gap: 2%;
+    }
+    .jogos picture {
+        width: 22%;
+    }
+    button.active {
+        font-size: 12px;
+    }
+}
+@media (max-width: 590px) {
+    .jogos picture {
+        width: 28%;
+    }
 }

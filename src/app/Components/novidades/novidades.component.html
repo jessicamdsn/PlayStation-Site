@@ -1,5 +1,8 @@
 <div>
-    <h1>As novidades do PlayStation Blog</h1>
+    <div class="titulo">
+    <h1>As novidades do PlayStation Blog</h1>    
+    </div>
+    
 
     <div class="box-carrossel">
         <swiper-container class="swiper" [slidesPerView]="3.2" centered-slides="true" [loop]="true" [navigation]="true"  [pagination]="false">
@@ -16,7 +19,7 @@
                         </div>
                         <div class="text">
                             <p>{{nov.nome}}</p>
-                            <p>{{nov.status}}</p>
+                            <p class="status">{{nov.status}}</p>
                             <span>{{nov.data}}</span>
                         </div>
                     </div>

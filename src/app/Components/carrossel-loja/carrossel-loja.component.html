@@ -1,25 +1,24 @@
-
 <div class="slide">
-    <div class="box-aside" [@animacaoPiscar]="estadoAnimacao">
-      <div class="box-text">
-        <h1>Apresentamos o console PS5 e seus acessórios</h1>
-        <h2>{{ slides[currentSlide].headline }}</h2>
-        <p>{{ slides[currentSlide].content }}</p>
-        <button>Saiba mais</button>
-      </div>
-      <div class="box-img">
-        <img [src]="slides[currentSlide].img" alt="" width="60%">
-      </div>
+  <div class="box-aside" [@animacaoPiscar]="estadoAnimacao">
+    <div class="box-text">
+      <h1>Apresentamos o console PS5 e seus acessórios</h1>
+      <h2>{{ slides[currentSlide].headline }}</h2>
+      <p>{{ slides[currentSlide].content }}</p>
+      <button>Saiba mais</button>
+    </div>
+    <div class="box-img">
+      <img [src]="slides[currentSlide].img" alt="" width="60%">
     </div>
   
 
-    <swiper-container class="swiper slide-options" slides-per-view="6" loop="false" navigation="true" >
-        <swiper-slide *ngFor="let slide of slides; let i = index" class="slide-button">
-            <button  (click)="changeSlide(i)">
-          <img [ngClass]="{'active': i === currentSlide}" [src]="slide.img" alt="Slide Image" width="100%">
-          <p [ngClass]="{'active': i === currentSlide}">{{slide.headline}}</p>
-        </button>
-        
-        </swiper-slide>
-    </swiper-container>
-   
+  </div>
+  <swiper-container class="swiper slide-options" slides-per-view="6" loop="false"  navigation="true" >
+    <swiper-slide *ngFor="let slide of slides; let i = index" class="slide-button">
+      <button (click)="changeSlide(i)">
+        <img [ngClass]="{'active': i === currentSlide}" [src]="slide.img" alt="Slide Image" width="100%">
+        <p [ngClass]="{'active': i === currentSlide}">{{slide.headline}}</p>
+      </button>
+
+    </swiper-slide>
+  </swiper-container>
+</div>

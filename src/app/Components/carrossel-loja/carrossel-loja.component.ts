@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA, } from '@angular/core';
+import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import Swiper from 'swiper';
+
 
 @Component({
   selector: 'app-carrossel-loja',
@@ -22,7 +24,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ])
   ]
 })
-export class CarrosselLojaComponent {
+export class CarrosselLojaComponent  {
   slides = [
     {
       headline: 'Console PlayStation 5',
@@ -70,8 +72,8 @@ export class CarrosselLojaComponent {
       img: '../../../assets/loja/camera-hd.png',
     },
   ];
-
-  currentSlide = 0;
+  
+currentSlide = 0;
 
 
   changeSlide(index: number) {
@@ -85,6 +87,8 @@ export class CarrosselLojaComponent {
     this.estadoAnimacao = 'sumir';
     setTimeout(() => {
       this.estadoAnimacao = 'inicio';
-    }, 100); // Ajuste o tempo para coincidir com a duração da animação
+    }, 100);
   }
+
+  
 }

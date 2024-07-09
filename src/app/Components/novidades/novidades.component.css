@@ -1,49 +1,141 @@
-.content{
+.content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150%;
-    width: 96%;
-    box-shadow: 1px 1px 8px -3px rgba(128,128,128,0.75);
+    height: 60%;
+    width: 120%;
+    box-shadow: 1px 1px 8px -3px rgba(128, 128, 128, 0.75);
     border-radius: 20px;
     padding: 4px;
+    scale: 75%;
 }
-h1{
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
     font-size: 40px;
     font-weight: 300;
     display: flex;
     justify-content: center;
-    padding: 60px;
+    padding: 65px 0px 0px 0px;
+    margin-bottom: -15px;
 }
 
-.img img{
-    border-radius: 20px;box-shadow: 1px 1px 18px -5px rgba(0,0,0,0.75);
+.img img {
+    border-radius: 20px;
+    box-shadow: 1px 1px 18px -5px rgba(0, 0, 0, 0.75);
 }
-.img img:hover{
+
+.img img:hover {
     cursor: pointer;
-    box-shadow: 1px 1px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 18px 0px rgba(0, 0, 0, 0.75);
 }
-.img h2{
+
+.img h2 {
     display: flex;
     align-items: center;
     padding: 10px;
     font-weight: 300;
     height: 70px;
+    font-size: 25px;
 }
-.img p{
+
+.img p {
+    font-size: 18px;
     display: flex;
     align-items: top;
     padding: 10px;
     height: 80px;
-    color: rgb(77, 76, 76);
+    color: rgb(102, 102, 102);
 }
-.autor{
+
+.autor {
     display: flex;
     align-items: center;
     gap: 5px;
     position: relative;
     bottom: 1px;
 }
-.autor .text{
-line-height: 6px;
+
+.autor .text {
+    line-height: 6px;
+}
+
+@media (max-width: 1245px) {
+    h1 {
+        text-align: center;
+        width: 90%;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    
+    swiper-slide {
+        margin-right: 50px;
+    }
+    .content {
+        height: 200%;
+        width: 150%;
+    }
+
+    .img p {
+        display: none;
+    }
+    .img h2 {
+        height: 150px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .text .status {
+        display: none;
+    }
+
+    .autor {
+        margin-top: 20px;
+    }
+
+    .autor div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .autor .text {
+        line-height: 12px;
+        p {
+            font-size: 23px;
+        }
+        span {
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    h1{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+   
+    .img h2 {
+        height: 150px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .autor div img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .autor .text {
+        line-height: 12px;
+        p {
+            font-size: 17px;
+        }
+        span {
+            font-size: 17px;
+        }
+    }
 }

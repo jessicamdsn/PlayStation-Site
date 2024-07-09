@@ -13,18 +13,21 @@
         text-decoration: none;
         font-size: 20px;
         color: rgb(37, 157, 255);
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
     .link:hover{
         scale: 105%;
         color: aqua;
     }
 }
+h5{
+    text-align: center;
+}
 .jessica{
     text-decoration: none;
         font-size: 18px;
         color: rgb(37, 157, 255);
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 }
 .jessica:hover{
     color: rgb(13, 87, 129);
@@ -33,4 +36,13 @@
 hr{
     margin-top: -20px;
     border-color: #3c7acc;
+}
+
+@media (max-width: 500px) {
+    img{
+        width: 245px;
+    }
+    .content{
+        scale: 90%;
+    }
 }

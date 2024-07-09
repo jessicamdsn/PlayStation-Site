@@ -56,3 +56,53 @@ button:hover {
         cursor: pointer;
     }
 }
+
+@media (max-width: 1000px) {
+    .box-all{
+        flex-direction: column-reverse;
+    }  
+    
+.box-aside{
+    width: 85%;
+    flex-direction: column;
+    text-align: center;
+
+    button {
+        margin: 0 auto;
+    }
+    img{
+        width: 65%;
+    }
+    
+}
+
+.box-img{
+    width: 80%;
+    img{
+        border-radius: 20px;
+        transition: scale 0.3s;
+    }
+    img:hover{
+        scale: 102%;
+        cursor: pointer;
+    }
+}
+
+}
+
+@media (max-width: 745px) {
+    .box-aside{
+    
+        h1{
+            font-size: 3vh;
+            line-height: 3vh;
+        }
+    
+        p{
+            font-size: 13px;
+        }
+    }
+    button {
+        font-size: 12px;
+    }
+}

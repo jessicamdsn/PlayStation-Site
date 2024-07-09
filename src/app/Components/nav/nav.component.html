@@ -1,8 +1,8 @@
-<div class="all">
+<div class="all" >
     <div class="box-links">
         <img src="../../../assets/playstation.svg" alt="" width="40px">
     
-        <ul class="lista">
+        <ul class="lista" [ngClass]="{'expandir': isExpanded}">
             <li><button>Jogos <mat-icon>expand_more</mat-icon></button></li>
             <li><button>PS5 <mat-icon>expand_more</mat-icon></button></li>
             <li><button>PS4 <mat-icon>expand_more</mat-icon></button></li>
@@ -21,3 +21,4 @@
         </div>
     </div>
 </div>
+<button class="toggle-button" (click)="toggleMenu()"><i class="material-icons">menu</i></button>

@@ -8,11 +8,11 @@
 
 .box-all div {
     color: aliceblue;
-    width: 600px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 6% 0px 0px 10%;
+    padding: 8% 0px 0px 10%;
 
 }
 
@@ -25,7 +25,7 @@
 
 .box-all div p {
     font-size: 16px;
-    color: rgb(160, 157, 157);
+    color: rgb(230, 228, 228);
 }
 
 
@@ -44,6 +44,7 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-top: -2px;
 }
 
 .box-img {
@@ -104,4 +105,46 @@ button:hover {
     cursor: pointer;
     border: 2px solid #26254f;
     box-shadow: 0px 0px 0px 2px rgb(252, 253, 253);
+}
+
+@media (max-width: 930px) {
+    .box-all div h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        line-height: 50px;
+    }
+    
+}
+@media (max-width: 770px) {
+    .box-all{
+        background-position: top center;
+    }
+    .box-all div h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+    button {
+        padding: 8px 10px;
+        font-size: 13px;
+        
+    }
+   
+}
+@media (max-width: 600px) {
+    .box-all div h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+    .box-all2 {
+        flex-direction: column;
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
+    .box-img {
+        height: 45%;
+        width: 65%;
+    }
+   
 }

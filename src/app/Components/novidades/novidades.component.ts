@@ -39,7 +39,7 @@ export class NovidadesComponent {
       data: 'jun 27, 2024',
     },
     { 
-      titulo: 'Zenless Zone Zero chega para ps5 em 4 de julho, confira detalhes sobre o combate, a nova área e personagens',
+      titulo: 'Zenless Zone Zero chega para ps5 em 4 de julho, confira detalhes sobre o combate.',
       content: 'Olá, Proxies! Saudações da equipe de desenvolvimento do Zenless Zone Zero, Eu sou Zhenyu Li, o produtor do Zenless Zone Zero. Depois de 4 anos de desenvolvimento, 3 rodadas de testes...',
       image: '../../../assets/img/nov3.png',
       autorimage: '../../../assets/img/nov3.png',
