@@ -1,4 +1,4 @@
-# PSClone WebApp
+# PlayStation Clone WebApp
 
 ## 💻 Visão Geral
 Este projeto é uma réplica da interface do site da PlayStation, desenvolvida para desafiar minhas habilidades em Angular, Swiper e Angular Materials. O objetivo é proporcionar uma experiência rica e interativa, similar à encontrada no site original da PlayStation, com foco em design responsivo e funcionalidades dinâmicas.
