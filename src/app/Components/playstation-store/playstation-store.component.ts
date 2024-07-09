@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './playstation-store.component.html',
   styleUrl: './playstation-store.component.css'
 })
+
 export class PlaystationStoreComponent {
 
 }

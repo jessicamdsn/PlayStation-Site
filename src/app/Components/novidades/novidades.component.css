@@ -55,7 +55,6 @@ h1 {
 .autor .text {
     line-height: 6px;
 }
-
 @media (max-width: 1245px) {
     h1 {
         text-align: center;

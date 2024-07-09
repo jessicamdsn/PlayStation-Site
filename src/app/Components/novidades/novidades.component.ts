@@ -7,6 +7,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   imports: [CommonModule],
   templateUrl: './novidades.component.html',
   styleUrl: './novidades.component.css',
+  
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { NavComponent } from '../Components/nav/nav.component';
 import { CarrosselComponent } from '../Components/carrossel/carrossel.component';
 import { CarrosselLojaComponent } from '../Components/carrossel-loja/carrossel-loja.component';
@@ -15,6 +16,7 @@ import { FooterComponent } from '../Components/footer/footer.component';
   selector: 'app-homepage',
   standalone: true,
   imports: [
+
     NavComponent, 
     CarrosselComponent, 
     CarrosselLojaComponent, 
@@ -26,10 +28,13 @@ import { FooterComponent } from '../Components/footer/footer.component';
     NovidadesComponent,
     RedesSociaisComponent,
     FooterComponent,
+
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
+
 })
+
 export class HomepageComponent {
 
 }

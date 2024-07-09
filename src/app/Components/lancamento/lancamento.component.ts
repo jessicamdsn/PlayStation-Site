@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './lancamento.component.html',
   styleUrl: './lancamento.component.css'
 })
+
 export class LancamentoComponent {
 
+
 }
+
