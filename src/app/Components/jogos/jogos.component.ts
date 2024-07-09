@@ -22,6 +22,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class JogosComponent {
+
+
   jogos = [
     { 
       nome: 'Brothers: A tale of two sons',
@@ -127,6 +129,7 @@ export class JogosComponent {
   selectedButton: string = 'antigos';
 
   selectButton(button: string) {
+
     this.selectedButton = button;
   }
 
@@ -134,9 +137,14 @@ export class JogosComponent {
   estadoAnimacao = 'inicio';
 
   iniciarAnimacao() {
+
     this.estadoAnimacao = 'sumir';
+
     setTimeout(() => {
+
       this.estadoAnimacao = 'inicio';
-    }, 100); // Ajuste o tempo para coincidir com a duração da animação
+
+    }, 100); 
   }
+  
 }

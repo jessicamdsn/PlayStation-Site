@@ -136,10 +136,8 @@ swiper-slide div div {
             font-size: 25px;
         }
     }
-
     swiper-slide div {
         height: 200px;
-
     }
     swiper-slide div div {
         width: 90%;
@@ -152,13 +150,11 @@ swiper-slide div div {
         }
        }
        .box-botao {
-
         display: flex;
         justify-content: center;
     
         button {
             font-size: 12px;
         }
-    
     }
 }

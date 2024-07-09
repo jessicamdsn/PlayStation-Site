@@ -9,7 +9,10 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   styleUrl: './novidades.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
+
 export class NovidadesComponent {
+
+
   blog = [
     { 
       titulo: 'Compre no seu próprio ritmo com o parcelamento na PlayStation Store',
@@ -102,5 +105,7 @@ export class NovidadesComponent {
       data: 'jun 26, 2024',
     },
     
+
   ];
+
 }

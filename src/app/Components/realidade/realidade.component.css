@@ -13,7 +13,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 10% 0px 0px 10%;
-
 }
 
 .box-all div h1 {
@@ -47,10 +46,8 @@ button:hover {
 @media (max-width: 1235px) {
     .box-all {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0)), url(../../../assets/img/virtual.png);
-
         background-position: bottom right;
     }
-
     .box-all div {
         width: 50%;
         height: 100%;
@@ -64,26 +61,21 @@ button:hover {
     button {
         margin-bottom: 55px;
     }
-
     .box-all div p {
         margin-bottom: 20px;
     }
 }
-
 @media (max-width: 930px) {
     .box-all div {
         width: 80%;
     }
-
     .box-all div h1 {
         font-size: 25px;
         margin-bottom: 20px;
     }
-
     .box-all div p {
         font-size: 15px;
     }
-
     button {
         width: 120px;
         padding: 8px 10px;

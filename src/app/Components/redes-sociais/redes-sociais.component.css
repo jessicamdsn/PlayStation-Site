@@ -27,7 +27,6 @@ h1{
     padding: 30px;
     font-size: 35px;
     font-weight: 300;
-
 }
 @media (max-width: 830px) {
     a{
@@ -37,11 +36,8 @@ h1{
         width: 70%;
     }
 }
-
 @media (max-width: 580px) {
     h1{
- 
         font-size: 28px;
-    
     }
 }

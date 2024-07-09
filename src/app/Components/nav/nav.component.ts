@@ -10,9 +10,12 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
+
   isExpanded = false;
 
   toggleMenu() {
+
     this.isExpanded = !this.isExpanded;
   }
+
 }

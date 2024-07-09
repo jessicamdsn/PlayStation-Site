@@ -10,6 +10,8 @@ import { Component, OnDestroy, OnInit, Inject, PLATFORM_ID, AfterViewInit, ViewC
   styleUrls: ['./carrossel.component.css']
 })
 export class CarrosselComponent implements OnInit {
+
+  
   slides = [
     {
       headline: 'Escape usando Portais',
@@ -51,17 +53,38 @@ export class CarrosselComponent implements OnInit {
   ];
 
   buttons = [
-    { class: 'hogwarts', id: 'hogwarts' },
-    { class: 'needforspeed', id: 'needforspeed' },
-    { class: 'lego', id: 'lego' },
-    { class: 'streetfight', id: 'streetfight' },
-    { class: 'minecraft', id: 'minecraft' },
-    { class: 'portal', id: 'portal' }
+    { 
+      class: 'hogwarts', 
+      id: 'hogwarts' 
+    },
+    { 
+      class: 'needforspeed', 
+      id: 'needforspeed' 
+    },
+    { 
+      class: 'lego', 
+      id: 'lego' 
+    },
+    { 
+      class: 'streetfight', 
+      id: 'streetfight' 
+    },
+    { 
+      class: 'minecraft', 
+      id: 'minecraft' 
+    },
+    { 
+      class: 'portal', 
+      id: 'portal' 
+    }
   ];
 
   currentSlide = 0;
+
   previousSlide = 0;
+
   private isBrowser: boolean;
+
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     this.isBrowser = isPlatformBrowser(this.platformId);
@@ -87,6 +110,7 @@ export class CarrosselComponent implements OnInit {
     this.currentSlide = (this.currentSlide + 1) % this.slides.length;
 
     if (this.isBrowser) {
+
       setTimeout(() => {
         if (document.readyState === 'complete') {
   
@@ -98,12 +122,15 @@ export class CarrosselComponent implements OnInit {
   }
 
   getSlideBackground(): any {
+
     return {
       'background-image': `url(${this.slides[this.currentSlide].background})`
     };
+
   }
 
   changeSlide(index: number) {
+
     this.currentSlide = index;
   }
 

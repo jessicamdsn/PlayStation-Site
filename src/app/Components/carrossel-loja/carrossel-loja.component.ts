@@ -10,21 +10,30 @@ import Swiper from 'swiper';
   imports: [CommonModule,],
   templateUrl: './carrossel-loja.component.html',
   styleUrl: './carrossel-loja.component.css',
+
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+
   animations: [
+
     trigger('animacaoPiscar', [
+
       state('inicio', style({
         opacity: 1
       })),
+
       state('sumir', style({
         opacity: 0
       })),
+
+      
       transition('inicio => sumir', animate('0s ease-out')),
       transition('sumir => inicio', animate('500ms ease-in'))
+
     ])
   ]
 })
 export class CarrosselLojaComponent  {
+
   slides = [
     {
       headline: 'Console PlayStation 5',
@@ -77,6 +86,7 @@ currentSlide = 0;
 
 
   changeSlide(index: number) {
+
     this.currentSlide = index;
     this.iniciarAnimacao()
   }
@@ -84,11 +94,15 @@ currentSlide = 0;
   estadoAnimacao = 'inicio';
 
   iniciarAnimacao() {
+
     this.estadoAnimacao = 'sumir';
+
     setTimeout(() => {
+
       this.estadoAnimacao = 'inicio';
     }, 100);
   }
+
 
   
 }
