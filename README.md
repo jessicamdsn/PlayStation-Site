@@ -1,27 +1,59 @@
-# PlayStationSite
+# PlayStation Clone WebApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## 💻 Visão Geral
+Este projeto é uma réplica da interface do site da PlayStation, desenvolvida para desafiar minhas habilidades em Angular, Swiper e Angular Materials. O objetivo é proporcionar uma experiência rica e interativa, similar à encontrada no site original da PlayStation, com foco em design responsivo e funcionalidades dinâmicas.
 
-## Development server
+## ⭐ Diferenciais Implementados
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Swiper Integration:
 
-## Code scaffolding
+  - Carrosséis Dinâmicos: Implementação de vários carrosséis utilizando a biblioteca Swiper para uma navegação suave e responsiva.
+  - Transições Animadas: Efeitos de transição customizados para melhorar a experiência do usuário.
+    
+- Angular Materials:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  - Componentes UI Modernos: Uso extensivo de Angular Materials para criar uma interface moderna e intuitiva.
 
-## Build
+- Performance Otimizada:
+  - Design Responsivo: Layouts adaptáveis a diferentes tamanhos de tela, garantindo uma ótima experiência tanto em desktops quanto em dispositivos móveis.
+  - Lazy Loading: Carregamento sob demanda de componentes para melhorar o desempenho.
+  - Redução de Tamanho de Pacote: Otimização de recursos para tempos de carregamento mais rápidos.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Tecnologias
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-## Running unit tests
+<div style="diplay: inline_block"><br/>
+<a href="#"><img align="center" alt="Angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/></a>
+<a href="#"><img align="center" alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/></a>
+<img align="center" alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img align="center" alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img align="center" alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/>
+<img align="center" alt="Vercel" src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"/>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+</div><br/>
 
-## Running end-to-end tests
+## 🗂️ Estrutura do Projeto
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── carrossel/
+│   │   ├── carrossel-loja/
+│   │   ├── footer/
+│   │   ├── jogos/
+│   │   ├── lancamento/
+│   │   ├── nav/
+│   │   ├── novidades/
+│   │   ├── play-plus/
+│   │   ├── playstation-store/
+│   │   ├── realidade/
+│   │   └── redes-sociais/
+│   ├── homepage/
+│   └── ... (outros diretórios e arquivos)
+├── assets/
+└── ... (outros diretórios e arquivos)
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
